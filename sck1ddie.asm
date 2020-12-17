@@ -3,8 +3,8 @@ global _start
 section .text:
 
 section .data:
-	msj: db 'sck1ddie ile assembly :)',10	;10 veya 0xA == \n
-	len equ $-msj
+	msj: db 'sck1ddie ile assembly :)',10	; 10 veya 0xA == \n
+	len equ $-msj				; len degiskeni equal(esittir) $-msj'a 
 
 _start:
 	mov eax,0x4		; sys_write fonksiyonu
